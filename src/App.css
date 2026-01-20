@@ -1129,3 +1129,40 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Navbar Light Mode (for white background pages) */
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar-light .nav-link {
+  color: var(--text-dark);
+  /* #0F172A */
+  font-weight: 500;
+}
+
+.navbar-light .nav-link:hover,
+.navbar-light .nav-link.active {
+  color: var(--primary-blue);
+  opacity: 1;
+}
+
+/* Logo filter removed as we now use specific logo assets */
+/* .navbar-light .logo-image {
+    filter: invert(1);
+} */
+
+.navbar-light .btn-signin {
+  background-color: #0F172A;
+  /* Dark button */
+  color: #ffffff;
+}
+
+.navbar-light .btn-signin:hover {
+  background-color: #1E293B;
+}
+
+.navbar-light .navbar-mobile-toggle span {
+  background-color: var(--text-dark);
+}

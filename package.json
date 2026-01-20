@@ -2,6 +2,7 @@
   "name": "react-docker-app",
   "private": true,
   "version": "0.0.1",
+  "homepage": "/trazeit",
   "type": "module",
   "scripts": {
     "dev": "vite",
