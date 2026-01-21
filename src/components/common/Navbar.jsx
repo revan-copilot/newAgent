@@ -21,7 +21,7 @@ function Navbar() {
     // Determine navbar style based on route and scroll
     // Home: Transparent top, Dark when scrolled
     // About, Platform Overview, & Solutions: Always White background (Light mode)
-    const isLightMode = location.pathname === '/about' || location.pathname === '/platform-overview' || location.pathname.startsWith('/solutions');
+    const isLightMode = location.pathname === '/about' || location.pathname === '/trace' || location.pathname.startsWith('/solutions');
 
     const navbarClass = `navbar ${isLightMode
         ? 'navbar-light'
@@ -40,9 +40,7 @@ function Navbar() {
                 <div className="navbar-nav">
                     <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>
 
-
-
-                    <Link to="/platform-overview" className={`nav-link ${location.pathname === '/platform-overview' ? 'active' : ''}`}>Trace</Link>
+                    <Link to="/trace" className={`nav-link ${location.pathname === '/trace' ? 'active' : ''}`}>Trace</Link>
 
                     <div className="dropdown">
                         <span className={`nav-link dropdown-toggle ${location.pathname.includes('/solutions') ? 'active' : ''}`}>Solutions</span>

@@ -18,7 +18,7 @@ function App() {
                 <main>
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/platform-overview" element={<PlatformOverview />} />
+                        <Route path="/trace" element={<PlatformOverview />} />
                         <Route path="/solutions/farm-to-fork" element={<FarmToFork />} />
                         <Route path="/solutions/regulatory-compliance" element={<RegulatoryCompliance />} />
                         <Route path="/solutions/brand-transparency" element={<BrandTransparency />} />
