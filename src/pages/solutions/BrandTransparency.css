@@ -1,0 +1,160 @@
+/* Brand Transparency Styles */
+.brand-transparency {
+    background: #fff;
+}
+
+.bt-section {
+    padding: 80px 0;
+}
+
+.bt-section-light {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* Headings & Text */
+.bt-heading {
+    font-family: 'Lateef', serif;
+    font-size: 75px;
+    font-weight: 500;
+    line-height: 75px;
+    color: #0E1624;
+    margin-bottom: 24px;
+}
+
+.bt-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 20px;
+}
+
+.bt-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0E1624;
+    margin-bottom: 32px;
+}
+
+.bt-text-hero {
+    font-size: 24px;
+}
+
+/* Consumer Portal Section */
+.bt-consumer-portal-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.bt-consumer-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.bt-consumer-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.bt-consumer-image-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.bt-consumer-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.bt-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bt-feature-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.bt-check-icon-container {
+    min-width: 24px;
+    height: 24px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bt-check-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.bt-feature-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 8px;
+}
+
+.bt-feature-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Business Impact Section */
+.bt-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.bt-impact-card {
+    background: #F8FAFC;
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.bt-impact-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.bt-impact-content {
+    flex: 1;
+}
+
+.bt-impact-percent {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1E3A8A;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.bt-impact-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #334155;
+    line-height: 1.4;
+}

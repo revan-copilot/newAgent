@@ -1,0 +1,171 @@
+/* Food Safety Styles */
+.food-safety {
+    background: #fff;
+}
+
+.fs-section {
+    padding: 80px 0;
+}
+
+.fs-section-light {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* Headings & Text */
+.fs-heading {
+    font-family: 'Lateef', serif;
+    font-size: 75px;
+    font-weight: 500;
+    line-height: 80px;
+    color: #0E1624;
+    margin-bottom: 24px;
+}
+
+.fs-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 20px;
+}
+
+.fs-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0E1624;
+    margin-bottom: 40px;
+}
+
+.fs-text-hero {
+    font-size: 24px;
+}
+
+/* Hero Section Diagram */
+.fs-hero-diagram-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.fs-hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Features Section */
+.fs-features-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.fs-features-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.fs-feature-image-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.fs-feature-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.fs-feature-list {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.fs-feature-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.fs-check-icon-container {
+    min-width: 24px;
+    height: 24px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fs-check-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.fs-feature-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 8px;
+}
+
+.fs-feature-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Impact Section */
+.fs-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.fs-impact-card {
+    background: #F8FAFC;
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.fs-impact-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.fs-impact-content {
+    flex: 1;
+}
+
+.fs-impact-percent {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1E3A8A;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.fs-impact-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #334155;
+    line-height: 1.4;
+}

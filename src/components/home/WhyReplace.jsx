@@ -1,4 +1,5 @@
 import illustrationImg from '../../assets/images/why_trazeit_illustration.png';
+import platformVisibilityBg from '../../assets/images/platform-visibility-background.png';
 
 function WhyReplace() {
     return (
@@ -15,8 +16,17 @@ function WhyReplace() {
                             </p>
                         </div>
                     </div>
-                    <div className="why-replace-image">
-                        <img src={illustrationImg} alt="Trazeit Supply Chain Network" />
+                    <div className="why-replace-image" style={{
+                        backgroundImage: `url(${platformVisibilityBg})`,
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                        padding: '40px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                    }}>
+                        <img src={illustrationImg} alt="Trazeit Supply Chain Network" style={{ maxWidth: '100%' }} />
                     </div>
                 </div>
             </div>

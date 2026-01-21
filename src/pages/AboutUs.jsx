@@ -9,6 +9,7 @@ import trazeitLogoBlue from '../assets/images/trazeit-logo-blue.png';
 import aboutRedefiningTrust from '../assets/images/about-redefining-trust.png';
 import logoFssai from '../assets/images/FSSAI_logo.png';
 import securityCheck from '../assets/images/security-check-stroke.png';
+import platformVisibilityBg from '../assets/images/platform-visibility-background.png';
 import FAQ from '../components/home/FAQ';
 
 const AboutUs = () => {
@@ -29,7 +30,7 @@ const AboutUs = () => {
     return (
         <div style={{ background: '#fff' }}>
             {/* Hero Section */}
-            <div className="section section-light" style={{ paddingTop: '140px', paddingBottom: '100px' }}>
+            <div className="section" style={{ paddingTop: '140px', paddingBottom: '100px' }}>
                 <div className="container">
                     <div style={{
                         display: 'flex',
@@ -108,7 +109,7 @@ const AboutUs = () => {
             </div>
 
             {/* Built by Experts Section */}
-            <div className="section" style={{ ...styles.section, background: '#F8FAFC' }}>
+            <div className="section" style={{ ...styles.section, background: '#fff' }}>
                 <div className="container">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '80px', flexWrap: 'wrap' }}>
                         <div style={{ flex: 1 }}>
@@ -130,7 +131,16 @@ const AboutUs = () => {
                                 ))}
                             </ul>
                         </div>
-                        <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+                        <div style={{
+                            flex: 1,
+                            display: 'flex',
+                            justifyContent: 'center',
+                            backgroundImage: `url(${platformVisibilityBg})`,
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'center',
+                            padding: '40px'
+                        }}>
                             <img src={aboutFoodIndustry} alt="Food Industry Challenges" style={{ maxWidth: '100%', height: 'auto' }} />
                         </div>
                     </div>
@@ -168,7 +178,7 @@ const AboutUs = () => {
             </div>
 
             {/* Key Differentiators */}
-            <div className="section" style={{ ...styles.section, background: '#F8FAFC' }}>
+            <div className="section" style={{ ...styles.section, background: '#fff' }}>
                 <div className="container">
                     <div style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto 60px' }}>
                         <h2 style={{ ...styles.heading, fontSize: '48px' }}>Four Key Differentiators</h2>

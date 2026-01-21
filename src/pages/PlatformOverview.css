@@ -1,0 +1,211 @@
+/* Platform Overview Styles */
+.platform-overview {
+    background: #fff;
+}
+
+.po-section {
+    padding: 80px 0;
+}
+
+.po-section-light {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* Headings & Text */
+.po-heading {
+    font-family: 'Lateef', serif;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #0E1624;
+    margin-bottom: 24px;
+}
+
+.po-heading-large {
+    font-size: 75px;
+    margin-bottom: 32px;
+}
+
+.po-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 20px;
+}
+
+.po-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #475569;
+    margin-bottom: 32px;
+}
+
+.po-hero-text {
+    margin: 0 auto 60px;
+}
+
+/* Hero Image */
+.po-hero-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.po-hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 24px;
+}
+
+/* Feature Sections */
+.po-feature-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.po-feature-content {
+    flex: 1;
+}
+
+.po-feature-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+}
+
+.po-feature-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Check Items */
+.po-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.po-check-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+.po-check-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 4px;
+}
+
+.po-check-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #475569;
+}
+
+/* Blockchain Section */
+.po-blockchain-container {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.po-blockchain-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 60px;
+}
+
+/* Comparison Table */
+.po-table-container {
+    overflow-x: auto;
+}
+
+.po-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 60px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.po-th {
+    padding: 24px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748B;
+    text-transform: uppercase;
+    background: #F8FAFC;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.po-th-center {
+    text-align: center;
+}
+
+.po-td {
+    padding: 24px;
+    text-align: left;
+    font-size: 16px;
+    color: #0F172A;
+    border-bottom: 1px solid #E2E8F0;
+    vertical-align: middle;
+}
+
+.po-td-feature {
+    font-weight: 500;
+}
+
+.po-td-center {
+    text-align: center;
+}
+
+.po-td-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.po-row-even {
+    background: #fff;
+}
+
+.po-row-odd {
+    background: #FCFCFD;
+}
+
+/* Icons for Table */
+.po-icon-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.po-check-circle {
+    background: #0F172A;
+    color: #fff;
+}
+
+.po-x-circle {
+    background: #EFF6FF;
+    color: #64748B;
+}
+
+.po-text-muted {
+    color: #64748B;
+}

@@ -1,0 +1,182 @@
+/* Farm to Fork Styles */
+.farm-to-fork {
+    background: #fff;
+}
+
+.ftf-section {
+    padding: 80px 0;
+}
+
+.ftf-section-light {
+    background: #F8FAFC;
+}
+
+/* Headings & Text */
+.ftf-heading {
+    font-family: 'Lateef', serif;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #0E1624;
+    margin-bottom: 24px;
+}
+
+.ftf-heading-large {
+    font-size: 75px;
+    margin-bottom: 40px;
+}
+
+.ftf-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 20px;
+}
+
+.ftf-subheading-small {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.ftf-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #475569;
+    margin-bottom: 32px;
+}
+
+/* Problem Alert Box */
+.ftf-problem-alert {
+    background: #FFF5F5;
+    border: 1px solid #FED7D7;
+    border-radius: 16px;
+    padding: 24px 40px;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.ftf-problem-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #9B4C4C;
+    margin: 0;
+}
+
+.ftf-problem-label {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Process Flow */
+.ftf-process-flow-container {
+    display: flex;
+    justify-content: center;
+}
+
+.ftf-process-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Key Features */
+.ftf-features-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ftf-features-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.ftf-feature-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.ftf-feature-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ftf-feature-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.ftf-check-icon-container {
+    min-width: 24px;
+    height: 24px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftf-check-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.ftf-feature-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0F172A;
+    margin-bottom: 8px;
+}
+
+.ftf-feature-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Impact Section */
+.ftf-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.ftf-impact-card {
+    background: #F8FAFC;
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ftf-impact-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.ftf-impact-percent {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1E3A8A;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.ftf-impact-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #334155;
+    line-height: 1.4;
+}

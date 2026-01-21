@@ -20,8 +20,8 @@ function Navbar() {
 
     // Determine navbar style based on route and scroll
     // Home: Transparent top, Dark when scrolled
-    // About: Always White background (Light mode)
-    const isLightMode = location.pathname === '/about';
+    // About, Platform Overview, & Solutions: Always White background (Light mode)
+    const isLightMode = location.pathname === '/about' || location.pathname === '/platform-overview' || location.pathname.startsWith('/solutions');
 
     const navbarClass = `navbar ${isLightMode
         ? 'navbar-light'
@@ -39,7 +39,21 @@ function Navbar() {
 
                 <div className="navbar-nav">
                     <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>
-                    <a href={isHome ? "#trace" : "/#trace"} className="nav-link">Trace</a>
+
+
+
+                    <Link to="/platform-overview" className={`nav-link ${location.pathname === '/platform-overview' ? 'active' : ''}`}>Trace</Link>
+
+                    <div className="dropdown">
+                        <span className={`nav-link dropdown-toggle ${location.pathname.includes('/solutions') ? 'active' : ''}`}>Solutions</span>
+                        <div className="dropdown-menu">
+                            <Link to="/solutions/farm-to-fork" className="dropdown-item">Farm-to-Fork Traceability</Link>
+                            <Link to="/solutions/food-safety" className="dropdown-item">Food Safety</Link>
+                            <Link to="/solutions/regulatory-compliance" className="dropdown-item">Regulatory Compliance</Link>
+                            <Link to="/solutions/brand-transparency" className="dropdown-item">Brand Transparency</Link>
+                        </div>
+                    </div>
+
                     <Link to="/about" className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}>About us</Link>
                     <a href={isHome ? "#contact" : "/#contact"} className="nav-link">Contact us</a>
                 </div>
