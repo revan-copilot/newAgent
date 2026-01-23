@@ -52,6 +52,15 @@ function Navbar() {
                         </div>
                     </div>
 
+                    <div className="dropdown">
+                        <span className={`nav-link dropdown-toggle ${location.pathname.includes('/industries') ? 'active' : ''}`}>Industries</span>
+                        <div className="dropdown-menu">
+                            <Link to="/industries/for-manufacturers" className="dropdown-item">For Manufacturers</Link>
+                            <Link to="/industries/for-exporters" className="dropdown-item">For Exporters</Link>
+                            <Link to="/industries/for-retailers" className="dropdown-item">For Retailers</Link>
+                        </div>
+                    </div>
+
                     <Link to="/about" className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}>About us</Link>
                     <a href={isHome ? "#contact" : "/#contact"} className="nav-link">Contact us</a>
                 </div>

@@ -8,6 +8,9 @@ import FarmToFork from './pages/solutions/FarmToFork';
 import RegulatoryCompliance from './pages/solutions/RegulatoryCompliance';
 import BrandTransparency from './pages/solutions/BrandTransparency';
 import FoodSafety from './pages/solutions/FoodSafety';
+import ForManufacturers from './pages/industries/ForManufacturers';
+import ForExporters from './pages/industries/ForExporters';
+import ForRetailers from './pages/industries/ForRetailers';
 import './App.css';
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
                         <Route path="/solutions/regulatory-compliance" element={<RegulatoryCompliance />} />
                         <Route path="/solutions/brand-transparency" element={<BrandTransparency />} />
                         <Route path="/solutions/food-safety" element={<FoodSafety />} />
+                        <Route path="/industries/for-manufacturers" element={<ForManufacturers />} />
+                        <Route path="/industries/for-exporters" element={<ForExporters />} />
+                        <Route path="/industries/for-retailers" element={<ForRetailers />} />
                         {/* Future pages can be added here */}
                         <Route path="/about" element={<AboutUs />} />
                         {/* <Route path="/contact" element={<Contact />} /> */}

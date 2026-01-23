@@ -1,5 +1,5 @@
 import heroBg from '../../assets/images/hero_background.png';
-import arrowBtn from '../../assets/images/arrow_button.png';
+import arrowBtn from '../../assets/images/arrow.svg';
 
 function Hero() {
     return (
