@@ -8,23 +8,23 @@
 }
 
 .fm-section-light {
-    background: #F8FAFC;
+    background: #fff;
 }
 
 /* Typography */
 .fm-heading {
-    font-family: 'Lateef', serif;
-    font-size: 48px;
-    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
     line-height: 1.2;
     color: #0E1624;
     margin-bottom: 24px;
 }
 
 .fm-heading-center {
-    font-family: 'Lateef', serif;
-    font-size: 48px;
-    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
     line-height: 1.2;
     color: #0E1624;
     margin-bottom: 40px;
@@ -143,10 +143,6 @@
 .fm-app-image {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-    transform: rotateY(-10deg);
-    transition: transform 0.3s ease;
 }
 
 .fm-app-image:hover {
@@ -203,7 +199,6 @@
     font-size: 18px;
     line-height: 1.6;
     color: #475569;
-    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -224,7 +219,6 @@
 /* Results Delivered Section */
 .fm-results-header {
     text-align: center;
-    max-width: 800px;
     margin: 0 auto 60px;
 }
 

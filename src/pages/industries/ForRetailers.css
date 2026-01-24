@@ -8,23 +8,23 @@
 }
 
 .fr-section-light {
-    background: #F8FAFC;
+    background: #fff;
 }
 
 /* Typography */
 .fr-heading {
-    font-family: 'Lateef', serif;
-    font-size: 48px;
-    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
     line-height: 1.2;
     color: #0E1624;
     margin-bottom: 24px;
 }
 
 .fr-heading-center {
-    font-family: 'Lateef', serif;
-    font-size: 48px;
-    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
     line-height: 1.2;
     color: #0E1624;
     margin-bottom: 20px;
@@ -100,11 +100,6 @@
 .fr-app-image {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-    /* transform: rotateY(-10deg); Removed rotation for this one as per likely design, or can keep if desired. Keeping subtle. */
-    transform: rotateY(-5deg);
-    transition: transform 0.3s ease;
 }
 
 .fr-app-image:hover {

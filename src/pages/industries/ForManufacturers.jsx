@@ -11,7 +11,7 @@ import resultIcon2 from '../../assets/images/industry-manufacture-2.png';
 import resultIcon3 from '../../assets/images/industry-manufacture-3.png';
 import resultIcon4 from '../../assets/images/industry-manufacture-4.png';
 import VideoSection from '../../components/industries/VideoSection';
-import ResultsDelivered from '../../components/industries/ResultsDelivered';
+import SolutionResults from '../../components/solutions/SolutionResults';
 import FAQ from '../../components/home/FAQ';
 import './ForManufacturers.css';
 
@@ -164,9 +164,9 @@ const ForManufacturers = () => {
 
 
             {/* Results Delivered Section */}
-            <ResultsDelivered
+            <SolutionResults
                 title="Results Delivered"
-                subtext="Track measurable outcomes with TRAZEIT: faster recall response, reduced rejections, supplier compliance, and end-to-end traceability—all driving tangible business impact."
+                subtitle="Track measurable outcomes with TRAZEIT: faster recall response, reduced rejections, supplier compliance, and end-to-end traceability—all driving tangible business impact."
                 data={[
                     { icon: resultIcon1, metric: "100%", label: "Batch traceability" },
                     { icon: resultIcon2, metric: "95%", label: "Supplier compliance" },

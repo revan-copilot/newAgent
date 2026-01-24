@@ -18,7 +18,7 @@ import resultIcon4 from '../../assets/images/export-4.png';
 
 import FAQ from '../../components/home/FAQ';
 import VideoSection from '../../components/industries/VideoSection';
-import ResultsDelivered from '../../components/industries/ResultsDelivered';
+import SolutionResults from '../../components/solutions/SolutionResults';
 import './ForExporters.css';
 
 const ForExporters = () => {
@@ -50,9 +50,9 @@ const ForExporters = () => {
             </section>
 
             {/* Results Delivered Section */}
-            <ResultsDelivered
+            <SolutionResults
                 title="Results Delivered"
-                subtext="Track measurable outcomes with TRAZEIT: faster recall response, reduced rejections, supplier compliance, and end-to-end traceability—all driving tangible business impact."
+                subtitle="Track measurable outcomes with TRAZEIT: faster recall response, reduced rejections, supplier compliance, and end-to-end traceability—all driving tangible business impact."
                 data={[
                     { icon: resultIcon1, metric: "85%", label: "Customs: 5 days → <1 day" },
                     { icon: resultIcon2, metric: "2", label: "Documentation Cut from 2 Days to Hours" },

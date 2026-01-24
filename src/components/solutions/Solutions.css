@@ -1,0 +1,241 @@
+/* Shared Solution Page Styles */
+
+/* Section Containers */
+.sol-section {
+    padding: 80px 0;
+}
+
+.sol-section-light {
+    background: #fff;
+    padding: 150px 0 80px;
+}
+
+.sol-section-white {
+    background: #fff;
+    padding: 150px 0 80px;
+}
+
+/* Hero Section */
+.sol-hero {
+    text-align: center;
+}
+
+.sol-hero-title {
+    font-family: 'Lateef', serif;
+    font-size: 75px;
+    font-weight: 500;
+    line-height: 80px;
+    color: #0E1624;
+    margin-bottom: 24px;
+}
+
+.sol-hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #475569;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.sol-features-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.sol-features-image-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.sol-features-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+}
+
+.sol-features-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sol-features-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 16px;
+}
+
+.sol-features-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+.sol-features-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 20px;
+}
+
+.sol-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sol-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.sol-check-icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+.sol-feature-item-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0F172A;
+    margin-bottom: 4px;
+}
+
+.sol-feature-item-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Results Section */
+.sol-results-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sol-results-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0E1624;
+    margin-bottom: 16px;
+}
+
+.sol-results-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #475569;
+    margin: 0 auto;
+}
+
+.sol-results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sol-result-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sol-result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sol-result-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.sol-result-metric {
+    font-family: 'Inter', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: #1E3A8A;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.sol-result-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #475569;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .sol-features-container {
+        flex-direction: column;
+    }
+
+    .sol-results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sol-hero-title {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sol-section-light,
+    .sol-section-white {
+        padding: 120px 0 60px;
+    }
+
+    .sol-hero-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .sol-hero-subtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .sol-result-card {
+        padding: 24px;
+    }
+
+    .sol-result-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .sol-result-metric {
+        font-size: 36px;
+        line-height: 1;
+    }
+
+    .sol-result-label {
+        font-size: 14px;
+    }
+}

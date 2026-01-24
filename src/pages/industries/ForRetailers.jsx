@@ -11,7 +11,7 @@ import resultIcon2 from '../../assets/images/retail-2.png';
 import resultIcon3 from '../../assets/images/retail-3.png';
 import resultIcon4 from '../../assets/images/retail-4.png';
 import VideoSection from '../../components/industries/VideoSection';
-import ResultsDelivered from '../../components/industries/ResultsDelivered';
+import SolutionResults from '../../components/solutions/SolutionResults';
 import FAQ from '../../components/home/FAQ'; // Importing FAQ from correct location
 import './ForRetailers.css';
 
@@ -43,6 +43,18 @@ const ForRetailers = () => {
                 </div>
             </section>
 
+            {/* Process Flow Image (Store-to-Farm Transparency) */}
+            <div className="section fr-section">
+                <div className="container">
+                    <h2 className="fr-heading-center">Store-to-Farm Transparency</h2>
+                    <p className="fr-text text-center" style={{ margin: '0 auto 40px', textAlign: 'center' }}>
+                        Track every step from store shelves back to the farm. Ensure complete visibility across the supply chain, building trust with consumers and stakeholders.
+                    </p>
+                    <div className="fr-process-flow-container">
+                        <img src={retailProcessFlow} alt="Store to Farm Transparency Process Flow" className="fr-process-image" />
+                    </div>
+                </div>
+            </div>
 
             {/* Core Platform Features (Premium Export Intelligence) */}
             <div className="section fr-section fr-section-light">
@@ -110,19 +122,6 @@ const ForRetailers = () => {
                 </div>
             </div>
 
-            {/* Process Flow Image (Store-to-Farm Transparency) */}
-            <div className="section fr-section">
-                <div className="container">
-                    <h2 className="fr-heading-center">Store-to-Farm Transparency</h2>
-                    <p className="fr-text text-center" style={{ maxWidth: '800px', margin: '0 auto 40px', textAlign: 'center' }}>
-                        Track every step from store shelves back to the farm. Ensure complete visibility across the supply chain, building trust with consumers and stakeholders.
-                    </p>
-                    <div className="fr-process-flow-container">
-                        <img src={retailProcessFlow} alt="Store to Farm Transparency Process Flow" className="fr-process-image" />
-                    </div>
-                </div>
-            </div>
-
             {/* Retailer in Action Section (Video) */}
             <VideoSection
                 title="Industries We Serve – Retail Solutions"
@@ -131,9 +130,9 @@ const ForRetailers = () => {
             />
 
             {/* Results Delivered Section */}
-            <ResultsDelivered
+            <SolutionResults
                 title="Results Delivered"
-                subtext="Track measurable outcomes with TRAZEIT: faster recall response, reduced rejections, supplier compliance, and end-to-end traceability—all driving tangible business impact."
+                subtitle="Track measurable outcomes with TRAZEIT: faster recall response, reduced rejections, supplier compliance, and end-to-end traceability—all driving tangible business impact."
                 data={[
                     { icon: resultIcon1, metric: "95%", label: "Supplier compliance" },
                     { icon: resultIcon2, metric: "8", label: "Recall execution minutes" },

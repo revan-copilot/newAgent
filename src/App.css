@@ -279,8 +279,115 @@
 }
 
 @media (max-width: 1024px) {
+
+  /* Fixed Main Menu Container */
   .navbar-nav {
     display: none;
+    position: fixed;
+    top: 68px;
+    /* Below navbar */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100vh - 68px);
+    background: #ffffff;
+    flex-direction: column;
+    padding: 20px 0 60px 0;
+    /* Vertical padding */
+    margin: 0;
+    gap: 0;
+    overflow-y: auto;
+    z-index: 999;
+    transform: none;
+  }
+
+  .navbar-nav.show {
+    display: flex;
+  }
+
+  /* Consistent Left Alignment for Main Links */
+  .navbar-nav .nav-link,
+  .navbar-nav .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E1624;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+
+  .navbar-nav .dropdown {
+    width: 100%;
+    display: block;
+    height: auto;
+    /* Fix excess spacing */
+  }
+
+  .navbar-nav .dropdown-toggle::after {
+    content: '+';
+    font-size: 24px;
+    font-weight: 300;
+    color: #64748B;
+    border: none;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    transition: none;
+    transform: none !important;
+  }
+
+  .navbar-nav .dropdown.open .dropdown-toggle::after {
+    content: '−';
+    transform: none !important;
+  }
+
+  /* Dropdown Menu Styles with Animation */
+  .navbar-nav .dropdown-menu {
+    position: static;
+    display: block;
+    /* Required for transition */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #F1F5F9;
+    border: none;
+    box-shadow: none;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transform: none;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s;
+  }
+
+  .navbar-nav .dropdown.open .dropdown-menu {
+    max-height: 500px;
+    /* Arbitrary large height */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Indented Dropdown Items */
+  .navbar-nav .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 14px 24px 14px 40px;
+    /* Reduced indent slightly */
+    font-size: 16px;
+    color: #475569;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  }
+
+  .navbar-nav .dropdown-item:hover,
+  .navbar-nav .dropdown-item:active {
+    background: rgba(0, 0, 0, 0.03);
+    color: #0E1624;
   }
 
   .navbar-actions {
@@ -289,6 +396,47 @@
 
   .navbar-mobile-toggle {
     display: flex;
+  }
+
+  .navbar-mobile-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .navbar-mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-mobile-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Mobile Sign-in Button Container */
+  .mobile-signin {
+    width: 100%;
+    padding: 24px;
+    margin-top: auto;
+  }
+
+  .mobile-signin .btn-signin {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #1E4D8C;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+  }
+
+  /* Light mode overrides (simplified as base is now white) */
+  .navbar-light .navbar-nav {
+    background: #ffffff;
+  }
+
+  .navbar-light .navbar-mobile-toggle span {
+    background-color: #0E1624;
   }
 }
 
@@ -300,7 +448,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 140px 20px 100px;
+  padding: 150px 20px 100px;
 }
 
 .hero-background {
@@ -313,7 +461,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-position: top;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-overlay {
@@ -322,7 +471,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -424,6 +573,12 @@
 @media (max-width: 1024px) {
   .hero-content h1 {
     font-size: 2.75rem;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -434,6 +589,12 @@
 
   .hero-content h1 {
     font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .hero-cta {

@@ -7,7 +7,7 @@ import platformCompliance from '../assets/images/trace-compilance-engine.png';
 import platformSecurity from '../assets/images/platform-security.png';
 import securityCheck from '../assets/images/security-check-stroke.png';
 import FAQ from '../components/home/FAQ';
-import './PlatformOverview.css';
+import './Trace.css';
 
 const PlatformOverview = () => {
     useEffect(() => {

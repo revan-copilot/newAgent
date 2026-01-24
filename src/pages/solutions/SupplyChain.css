@@ -1,0 +1,156 @@
+/* Supply Chain Page Styles - Adapted from FarmToFork for consistency */
+.supply-chain {
+    background: #fff;
+    min-height: 100vh;
+}
+
+.sc-section {
+    padding: 80px 0;
+}
+
+.sc-section-light {
+    background: #fff;
+    padding: 80px 0;
+}
+
+/* Headings & Text */
+.sc-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0E1624;
+    margin-bottom: 16px;
+}
+
+.sc-heading-large {
+    font-family: 'Lateef', serif;
+    font-size: 56px;
+    /* Optimized for the specific title length */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sc-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 20px;
+}
+
+.sc-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #475569;
+    margin-bottom: 32px;
+}
+
+.sc-text-center {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Vulnerability Section (Top) */
+.sc-vuln-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.sc-phone-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+}
+
+.sc-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sc-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.sc-check-icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+.sc-feature-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0F172A;
+    margin-bottom: 4px;
+}
+
+.sc-feature-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Results Delivered Section */
+.sc-results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Enforce 2x2 grid */
+    gap: 30px;
+}
+
+.sc-result-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.sc-result-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.sc-result-metric {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1E3A8A;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.sc-result-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #334155;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .sc-vuln-container {
+        flex-direction: column;
+    }
+
+    .sc-results-grid {
+        grid-template-columns: 1fr;
+    }
+}
