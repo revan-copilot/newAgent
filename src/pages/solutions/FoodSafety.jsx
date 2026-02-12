@@ -61,7 +61,24 @@ const FoodSafety = () => {
                 data={impactsData}
             />
 
-            <FAQ />
+            <FAQ items={[
+                {
+                    question: 'How does TRAZEIT find affected products so fast?',
+                    answer: 'Blockchain records every batch movement with parent-child relationships. Search once, see complete downstream impact across all customers instantly.',
+                },
+                {
+                    question: 'What happens during an actual recall?',
+                    answer: 'One-click recall activation notifies all affected partners immediately via SMS/email. The system auto-generates regulatory reports and blocks further scans of affected batches.',
+                },
+                {
+                    question: 'Can retailers use this too?',
+                    answer: 'Yes. Retailers can use TRAZEIT to instantly check inbound shipments against recall lists and block sales of unsafe batches at the POS.',
+                },
+                {
+                    question: 'Does it work for multi-ingredient products?',
+                    answer: 'Yes. Our bill-of-materials traceability tracks every ingredient back to its source, handling complex mixing and transformation events.',
+                },
+            ]} />
         </div>
     );
 };

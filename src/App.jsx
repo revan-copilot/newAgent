@@ -12,11 +12,13 @@ import ForManufacturers from './pages/industries/ForManufacturers';
 import ForExporters from './pages/industries/ForExporters';
 import ForRetailers from './pages/industries/ForRetailers';
 import SupplyChain from './pages/solutions/SupplyChain';
+import ComplianceHub from './pages/ComplianceHub';
+import ISO22005 from './pages/ISO22005';
 import './App.css';
 
 function App() {
     return (
-        <Router basename="/trazeit">
+        <Router>
             <div className="app">
                 <Navbar />
                 <main>
@@ -31,6 +33,8 @@ function App() {
                         <Route path="/industries/for-exporters" element={<ForExporters />} />
                         <Route path="/industries/for-retailers" element={<ForRetailers />} />
                         <Route path="/solutions/supply-chain" element={<SupplyChain />} />
+                        <Route path="/compliance-hub" element={<ComplianceHub />} />
+                        <Route path="/compliance-hub/iso-22005" element={<ISO22005 />} />
                         {/* Future pages can be added here */}
                         <Route path="/about" element={<AboutUs />} />
                         {/* <Route path="/contact" element={<Contact />} /> */}

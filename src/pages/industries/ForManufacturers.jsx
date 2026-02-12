@@ -24,19 +24,24 @@ const ForManufacturers = () => {
         <div className="for-manufacturers">
             {/* Hero Section */}
             {/* Hero Section */}
-            <section className="hero">
-                <div className="hero-background" style={{ backgroundImage: `url(${manufHeroBg})` }}></div>
-                <div className="hero-overlay"></div>
-                <div className="container">
-                    <div className="hero-content">
-                        <h1>Prove Product Quality and Compliance to Every Stakeholder</h1>
-                        <p className="hero-subtitle">
+            {/* Hero Section */}
+            {/* Hero Section */}
+            {/* Hero Section */}
+            <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-[120px] sm:pt-[150px] sm:pb-[100px]">
+                <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat w-full h-full" style={{ backgroundImage: `url(${manufHeroBg})` }}></div>
+                <div className="absolute inset-0 bg-black/60 z-[1]"></div>
+                <div className="container relative z-[2] text-center">
+                    <div className="flex flex-col items-center">
+                        <h1 className="text-white font-[Lateef] font-medium mb-7 w-full -tracking-[0.01em] text-[2rem] leading-[1.2] sm:text-[2.75rem] sm:leading-[1.1] lg:text-[106px] lg:leading-[91px]">
+                            Prove Product Quality and Compliance to Every Stakeholder
+                        </h1>
+                        <p className="text-white font-[Inter] font-normal mb-12 text-base leading-6 sm:text-[20px] sm:leading-[30px] lg:text-[23px] lg:leading-[34px] w-full mx-auto">
                             Demonstrate verified product quality and regulatory compliance across the supply chain with real-time, auditable traceability—trusted by regulators, partners, and consumers.
                         </p>
-                        <div className="hero-cta">
-                            <button className="btn btn-gold">Request a Demo</button>
-                            <button className="btn btn-outline-white">
-                                <img src={arrowBtn} alt="Play" className="play-icon-img" style={{ width: '20px', height: '20px', objectFit: 'contain' }} />
+                        <div className="flex flex-col sm:flex-row gap-5 flex-wrap justify-center items-center w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-6 py-3 text-base font-medium text-white bg-[#1E4D8C] rounded-sm transition-all duration-200 hover:bg-[#163A6B] hover:-translate-y-[1px] hover:shadow-lg">Request a Demo</button>
+                            <button className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white bg-transparent border border-white rounded-sm transition-all duration-200 hover:bg-white hover:text-[#0F172A]">
+                                <img src={arrowBtn} alt="Play" className="w-[18px] h-[18px] transition-all duration-200 group-hover:brightness-0" />
                                 Watch 2-Min Demo Video
                             </button>
                         </div>
@@ -176,7 +181,24 @@ const ForManufacturers = () => {
             />
 
             {/* FAQ Section */}
-            <FAQ />
+            <FAQ items={[
+                {
+                    question: 'How does this help millet processors specifically?',
+                    answer: 'Tracks smallholder farmer sourcing (geolocation, practices), processing steps, nutritional testing, FSSAI labeling, EU export documentation. Complete chain.',
+                },
+                {
+                    question: 'Can we start small?',
+                    answer: 'Yes. Begin with one product line or facility. TRAZEIT scales as you grow — add suppliers, processing lines, and export destinations without re-architecting your traceability system.',
+                },
+                {
+                    question: 'How does TRAZEIT handle batch-level traceability?',
+                    answer: 'Every input is linked to every output at each processing step. If a quality issue arises, pinpoint the exact batch, supplier, and processing parameters in seconds — not days.',
+                },
+                {
+                    question: 'Does it integrate with existing manufacturing systems?',
+                    answer: 'TRAZEIT connects with ERP, MES, and quality management systems via API. Existing workflows stay intact while gaining blockchain-verified traceability.',
+                },
+            ]} />
         </div>
     );
 };

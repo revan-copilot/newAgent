@@ -51,7 +51,24 @@ const SupplyChain = () => {
                 data={resultsData}
             />
 
-            <FAQ />
+            <FAQ items={[
+                {
+                    question: 'How does TRAZEIT score suppliers?',
+                    answer: '7 weighted factors: compliance docs, quality metrics, delivery performance, data completeness, audit history, certifications, risk alerts. Real-time updates.',
+                },
+                {
+                    question: "What if suppliers don't submit data?",
+                    answer: 'Automated reminders escalate through email, SMS, and portal notifications. Non-compliant suppliers are flagged in dashboards with risk scores adjusted accordingly.',
+                },
+                {
+                    question: 'Can we track across multiple tiers of suppliers?',
+                    answer: 'Yes. TRAZEIT maps your full supply network — Tier 1 through origin — giving visibility into sub-suppliers, raw material sources, and intermediary handlers.',
+                },
+                {
+                    question: 'How fast can we onboard existing suppliers?',
+                    answer: 'Most suppliers are onboarded within 1–2 weeks via lightweight mobile app or web portal. No enterprise software installation required on their end.',
+                },
+            ]} />
         </div>
     );
 };

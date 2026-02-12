@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: 'Inter';
     src: url('./assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
@@ -46,7 +50,7 @@
     --section-padding: 80px;
 
     /* Border Radius */
-    --radius-sm: 6px;
+    --radius-sm: 5px;
     --radius-md: 10px;
     --radius-lg: 16px;
     --radius-xl: 24px;
@@ -93,7 +97,7 @@ a {
 button {
     font-family: inherit;
     cursor: pointer;
-    border: none;
+    border-width: 0;
     background: none;
 }
 
@@ -104,9 +108,7 @@ ol {
 
 /* Container */
 .container {
-    max-width: var(--container-max);
-    margin: 0 auto;
-    padding: 0 24px;
+    @apply max-w-screen-xl mx-auto px-6;
 }
 
 /* Section */
