@@ -154,14 +154,6 @@ const ForRetailers = () => {
                     question: 'How does this prevent supplier fraud?',
                     answer: 'Blockchain-verified provenance records are immutable. Every claim — organic, fair-trade, origin — is backed by timestamped evidence traceable to the source.',
                 },
-                {
-                    question: 'What\'s the integration timeline for retailers?',
-                    answer: 'Most retailers go live within 4–6 weeks. TRAZEIT integrates with existing ERP, POS, and inventory systems with minimal disruption to store operations.',
-                },
-                {
-                    question: 'Can consumers verify product authenticity?',
-                    answer: 'Yes. QR codes on packaging let consumers scan and view the full journey — farm to shelf — building trust and brand loyalty.',
-                },
             ]} />
         </div>
     );

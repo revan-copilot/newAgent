@@ -54,7 +54,7 @@ const BrandTransparency = () => {
             <FAQ items={[
                 {
                     question: 'How do consumers access the data?',
-                    answer: 'Print GS1 Digital Link QR code on packaging. Consumer scans → instant product passport loads. Works offline after first sync.',
+                    answer: 'Print GS1 Digital Link QR code on packaging. Consumer scans → instant product passport loads. Works offline after first sync',
                 },
                 {
                     question: 'Can we control what consumers see?',
@@ -63,10 +63,6 @@ const BrandTransparency = () => {
                 {
                     question: 'Does this help with exports?',
                     answer: 'Absolutely. Digital product passports maintain EU compliance (EUDR, ISO 22005) while simultaneously marketing your quality to global consumers.',
-                },
-                {
-                    question: 'What happens if a QR code is damaged?',
-                    answer: 'Our system supports batch-level lookup via website and SMS backup for markets with lower smartphone penetration.',
                 },
             ]} />
         </div>

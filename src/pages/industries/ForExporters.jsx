@@ -154,19 +154,11 @@ const ForExporters = () => {
             <FAQ items={[
                 {
                     question: 'Which export markets does TRAZEIT cover?',
-                    answer: 'USA (FSMA 204), EU (EUDR/ISO 22005), Canada, Australia, Middle East, 50+ countries. Updates automatically for regulation changes.',
+                    answer: 'USA (FSMA 204), EU (EUDR/ISO 22005), Canada, Australia, Middle East, 50+ countries. Updates automatically for regulation changes',
                 },
                 {
                     question: 'How does EUDR geolocation work?',
                     answer: 'TRAZEIT captures GPS coordinates at harvest with polygon-level precision, links them to satellite deforestation data, and generates EUDR-compliant due diligence statements automatically.',
-                },
-                {
-                    question: 'Can TRAZEIT handle multi-country compliance simultaneously?',
-                    answer: 'Yes. A single data capture workflow maps to FSMA 204, ISO 22005, EUDR, and GS1 requirements — no duplicate data entry across different export destinations.',
-                },
-                {
-                    question: 'What documentation does TRAZEIT generate for customs?',
-                    answer: 'Automated export certificates, origin declarations, phytosanitary records, and compliance attestations — all blockchain-verified and accepted by major importing authorities.',
                 },
             ]} />
         </div>

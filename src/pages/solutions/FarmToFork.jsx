@@ -31,6 +31,17 @@ const FarmToFork = () => {
         { icon: farmImpact4, metric: "0%", label: "Zero compliance violations in audits" }
     ];
 
+    const ftfFaqs = [
+        {
+            question: 'Can smallholder farmers use this system?',
+            answer: 'Yes. Simple QR scanning via basic phones. Voice data entry available. Works offline and syncs automatically when reconnected. Training takes 15 minutes.'
+        },
+        {
+            question: 'What data exactly gets captured?',
+            answer: 'Capture geolocation polygons, soil health tests, harvest timestamps, crop varieties, pesticide/fertilizer application logs, and verified certification numbers — all linked to the specific lot.'
+        }
+    ];
+
     return (
         <div className="farm-to-fork">
             {/* Custom Hero with Problem Alert & Process Flow */}
@@ -72,7 +83,7 @@ const FarmToFork = () => {
                 data={impactsData}
             />
 
-            <FAQ />
+            <FAQ items={ftfFaqs} />
         </div>
     );
 };

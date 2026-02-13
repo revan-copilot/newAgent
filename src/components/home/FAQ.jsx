@@ -74,5 +74,3 @@ function FAQ({ items }) {
 }
 
 export default FAQ;
-
-

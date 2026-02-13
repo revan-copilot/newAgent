@@ -184,19 +184,11 @@ const ForManufacturers = () => {
             <FAQ items={[
                 {
                     question: 'How does this help millet processors specifically?',
-                    answer: 'Tracks smallholder farmer sourcing (geolocation, practices), processing steps, nutritional testing, FSSAI labeling, EU export documentation. Complete chain.',
+                    answer: 'Tracks smallholder farmer sourcing (geolocation, practices), processing steps, nutritional testing, FSSAI labeling, EU export documentation. Complete chain',
                 },
                 {
                     question: 'Can we start small?',
                     answer: 'Yes. Begin with one product line or facility. TRAZEIT scales as you grow — add suppliers, processing lines, and export destinations without re-architecting your traceability system.',
-                },
-                {
-                    question: 'How does TRAZEIT handle batch-level traceability?',
-                    answer: 'Every input is linked to every output at each processing step. If a quality issue arises, pinpoint the exact batch, supplier, and processing parameters in seconds — not days.',
-                },
-                {
-                    question: 'Does it integrate with existing manufacturing systems?',
-                    answer: 'TRAZEIT connects with ERP, MES, and quality management systems via API. Existing workflows stay intact while gaining blockchain-verified traceability.',
                 },
             ]} />
         </div>

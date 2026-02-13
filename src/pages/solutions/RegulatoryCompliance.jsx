@@ -6,6 +6,7 @@ import logoFSMA from '../../assets/images/logo_fsma204.png';
 import logoEUDR from '../../assets/images/logo_eu_dr.png';
 import logoGS1 from '../../assets/images/logo_gs1.png';
 import securityCheck from '../../assets/images/security-check-stroke.png';
+import SolutionHero from '../../components/solutions/SolutionHero';
 import FAQ from '../../components/home/FAQ';
 import './RegulatoryCompliance.css';
 
@@ -40,16 +41,10 @@ const RegulatoryCompliance = () => {
     return (
         <div className="regulatory-compliance">
             {/* Hero Section */}
-            <div className="section rc-section-light">
-                <div className="container">
-                    <h1 className="rc-heading rc-heading-hero">
-                        Meet Global Food Safety Standards Automatically
-                    </h1>
-                    <p className="rc-text rc-text-hero">
-                        78% of food exporters face documentation gaps. $2.6M average recall cost. Manual compliance = errors, delays, market exclusion
-                    </p>
-                </div>
-            </div>
+            <SolutionHero
+                title="Meet Global Food Safety Standards Automatically"
+                subtitle="78% of food exporters face documentation gaps. $2.6M average recall cost. Manual compliance = errors, delays, market exclusion"
+            />
 
             {/* Compliance Engine & Standards Section */}
             <div className="section rc-section">
@@ -127,7 +122,16 @@ const RegulatoryCompliance = () => {
             </div>
 
             {/* FAQ Section */}
-            <FAQ />
+            <FAQ items={[
+                {
+                    question: 'Will TRAZEIT pass an ISO 22005 audit?',
+                    answer: 'Multiple clients certified using TRAZEIT documentation. System generates complete audit package automatically',
+                },
+                {
+                    question: "What's the FSMA 204 deadline?",
+                    answer: 'The compliance date for all persons subject to the recordkeeping requirements of FSMA Rule 204 is January 20, 2026. TRAZEIT ensures you are compliant and audit-ready well before the deadline.',
+                },
+            ]} />
         </div>
     );
 };

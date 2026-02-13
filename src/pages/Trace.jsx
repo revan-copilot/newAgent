@@ -10,6 +10,21 @@ import FAQ from '../components/home/FAQ';
 import './Trace.css';
 
 const PlatformOverview = () => {
+    const traceFaqs = [
+        {
+            question: 'Can TRAZEIT integrate with SAP/Oracle?',
+            answer: 'Yes. Full REST API, webhook support, and pre-built connectors for SAP, Oracle NetSuite, and 20+ ERP/warehouse systems ensure seamless data flow across your existing enterprise architecture.'
+        },
+        {
+            question: 'What devices work for data capture?',
+            answer: 'Capture data on any device—smartphones (iOS/Android), warehouse scanners, Bluetooth scales, and IoT sensors. Our app works offline and syncs automatically when reconnected.'
+        },
+        {
+            question: 'How secure is the blockchain data?',
+            answer: 'All data is encrypted via military-grade AWS KMS and anchored to an immutable blockchain. Private channels ensure you control exactly who sees what, with a permanent cryptographic audit trail.'
+        }
+    ];
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -187,7 +202,7 @@ const PlatformOverview = () => {
             </div>
 
             {/* FAQ Section */}
-            <FAQ />
+            <FAQ items={traceFaqs} />
         </div>
     );
 };
