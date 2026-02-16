@@ -37,6 +37,12 @@
     margin: 0 auto;
 }
 
+.food-safety .sol-hero-subtitle,
+.brand-transparency .sol-hero-subtitle {
+    color: #0E1624;
+    /* Darker as in original */
+}
+
 /* Features Section */
 .sol-features-container {
     display: flex;
@@ -114,12 +120,25 @@
     margin-bottom: 4px;
 }
 
+/* Override for specific pages that used 20px titles */
+.food-safety .sol-feature-item-title,
+.brand-transparency .sol-feature-item-title {
+    font-size: 20px;
+    color: #0E1624;
+}
+
 .sol-feature-item-desc {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: #64748b;
     line-height: 1.5;
     margin: 0;
+}
+
+/* Override for darker text on specific pages */
+.food-safety .sol-feature-item-desc,
+.brand-transparency .sol-feature-item-desc {
+    color: #475569;
 }
 
 /* Results Section */
@@ -174,18 +193,282 @@
 
 .sol-result-metric {
     font-family: 'Inter', sans-serif;
-    font-size: 56px;
+    font-size: 48px;
+    /* Restored to 48px as it was common on most pages */
     font-weight: 700;
-    color: #223C77;
+    color: #1E3A8A;
+    /* Restored to #1E3A8A as it was common */
     line-height: 1;
     margin-bottom: 8px;
 }
 
 .sol-result-label {
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    color: #475569;
+    font-size: 16px;
+    /* Restored to 16px */
+    color: #334155;
+    /* Restored to #334155 */
     line-height: 1.4;
+}
+
+/* Page Specific Overrides for Results (e.g. if some pages actually used the larger 56px) */
+.food-safety .sol-result-card,
+.brand-transparency .sol-result-card,
+.farm-to-fork .sol-result-card,
+.supply-chain .sol-result-card {
+    background: #F8FAFC;
+    /* Match original F8FAFC */
+}
+
+/* Assessment Banner */
+.sol-assessment-banner {
+    background: #EAEFF7;
+    border-radius: 24px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.sol-assessment-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.sol-assessment-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 24px;
+    line-height: 50px;
+}
+
+.sol-assessment-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #0E1624;
+    margin-bottom: 32px;
+}
+
+.sol-assessment-button {
+    background-color: #143A79;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sol-assessment-image-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sol-assessment-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Problem Alert Box */
+.sol-problem-alert {
+    background: #FFF5F5;
+    border: 1px solid #FED7D7;
+    border-radius: 16px;
+    padding: 24px 40px;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.sol-problem-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #9B4C4C;
+    margin: 0;
+}
+
+.sol-problem-label {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Standards Grid */
+.sol-standards-container {
+    flex: 1.2;
+    min-width: 300px;
+}
+
+.sol-standards-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #0E1624;
+    margin-bottom: 20px;
+}
+
+.sol-standards-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0E1624;
+    margin-bottom: 32px;
+}
+
+.sol-standards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 60px;
+}
+
+.sol-standard-card {
+    margin-bottom: 40px;
+}
+
+.sol-standard-logo-container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sol-standard-logo {
+    max-height: 100%;
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.sol-standard-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 16px;
+}
+
+.sol-standard-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.sol-standard-check-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.sol-standard-check-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #0E1624;
+    line-height: 26px;
+}
+
+/* Page Specific Diagrams/Layouts */
+
+/* Regulatory Compliance */
+.rc-diagram-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.rc-diagram-box {
+    background: #0F172A;
+    border-radius: 24px;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rc-diagram-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Food Safety */
+.fs-hero-diagram-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.fs-hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Farm to Fork */
+.ftf-process-flow-container {
+    display: flex;
+    justify-content: center;
+}
+
+.ftf-process-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.ftf-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #0E1624;
+    margin-bottom: 20px;
+}
+
+.ftf-subheading-small {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+/* Supply Chain */
+.sc-vuln-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.sc-phone-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+}
+
+.sc-heading-center {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Brand Transparency (Internal Page Classes) */
+.brand-transparency,
+.food-safety,
+.farm-to-fork,
+.regulatory-compliance,
+.supply-chain {
+    background: #fff;
 }
 
 /* Responsive */
@@ -201,6 +484,10 @@
     .sol-hero-title {
         font-size: 42px;
         line-height: 48px;
+    }
+
+    .sc-vuln-container {
+        flex-direction: column;
     }
 }
 

@@ -1,0 +1,372 @@
+/* Shared Industry Page Styles */
+
+/* Hero Section */
+.ind-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 120px 0;
+}
+
+.ind-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.ind-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.ind-hero-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.ind-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ind-hero-title {
+    color: #fff;
+    font-family: 'Lateef', serif;
+    font-weight: 500;
+    margin-bottom: 28px;
+    width: 100%;
+    letter-spacing: -0.01em;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.ind-hero-subtitle {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ind-hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Industry-specific Section Wrapper */
+.for-manufacturers,
+.for-exporters,
+.for-retailers {
+    background: #fff;
+}
+
+/* Sections & Typography */
+.ind-section {
+    padding: 80px 0;
+}
+
+.ind-section-light {
+    background: #fff;
+}
+
+.ind-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #0E1624;
+    margin-bottom: 24px;
+}
+
+.ind-heading-center {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #0E1624;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.ind-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 32px;
+}
+
+/* Feature Grid Layout */
+.ind-features-grid {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.ind-features-grid-reverse {
+    flex-direction: row-reverse;
+}
+
+.ind-features-content {
+    flex: 1;
+}
+
+.ind-features-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.ind-feature-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Feature List Items */
+.ind-feature-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.ind-feature-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.ind-check-icon-container {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+.ind-check-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.ind-feature-item h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0F172A;
+    margin: 0 0 8px 0;
+}
+
+.ind-feature-item p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #475569;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.ind-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 100%;
+}
+
+.ind-btn-primary {
+    background-color: #1E4D8C;
+    color: white;
+    border: none;
+}
+
+.ind-btn-primary:hover {
+    background-color: #163A6B;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ind-btn-outline {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.ind-btn-outline:hover {
+    background-color: white;
+    color: #0F172A;
+}
+
+.ind-btn-icon {
+    width: 18px;
+    height: 18px;
+    transition: all 0.2s ease;
+}
+
+.ind-btn-outline:hover .ind-btn-icon {
+    filter: brightness(0);
+}
+
+/* Page Specific Lists */
+
+/* Pain Points (Manufacturers) */
+.fm-pain-points-grid {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.fm-pain-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fm-pain-item {
+    background: #F8FAFC;
+    padding: 20px 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #334155;
+    line-height: 1.5;
+}
+
+.fm-pain-icon {
+    font-size: 20px;
+}
+
+/* Country Compliance (Exporters) */
+.fe-country-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fe-country-item {
+    background: #fff;
+    padding: 20px 24px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #334155;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.fe-flag {
+    font-size: 24px;
+}
+
+/* Process Flows & Diagrams */
+.ind-process-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.ind-process-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+    .ind-hero-title {
+        font-size: 2.75rem;
+        line-height: 1.1;
+    }
+
+    .ind-hero-subtitle {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .ind-hero-buttons {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .ind-btn {
+        width: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ind-hero-title {
+        font-size: 106px;
+        line-height: 91px;
+    }
+
+    .ind-hero-subtitle {
+        font-size: 23px;
+        line-height: 34px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .ind-features-grid,
+    .ind-features-grid-reverse {
+        flex-direction: column;
+    }
+
+    .fm-pain-points-grid {
+        flex-direction: column;
+    }
+
+    .ind-features-image-container {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .ind-section {
+        padding: 60px 0;
+    }
+
+    .ind-heading,
+    .ind-heading-center {
+        font-size: 30px;
+    }
+}

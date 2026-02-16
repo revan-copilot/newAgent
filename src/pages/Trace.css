@@ -60,6 +60,33 @@
     border-radius: 24px;
 }
 
+/* Feature Split Standards (for FeatureSplitSection component) */
+.feature-split-grid {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.feature-split-grid-reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-split-content {
+    flex: 1;
+}
+
+.feature-split-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-split-image {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Feature Sections */
 .po-feature-container {
     display: flex;

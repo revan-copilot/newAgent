@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SolutionHero from '../../components/solutions/SolutionHero';
 import SolutionFeatures from '../../components/solutions/SolutionFeatures';
 import SolutionResults from '../../components/solutions/SolutionResults';
 import FAQ from '../../components/home/FAQ';
@@ -8,8 +9,6 @@ import foodSafety1 from '../../assets/images/food-safety-1.png';
 import foodSafety2 from '../../assets/images/food-safety-2.png';
 import foodSafety3 from '../../assets/images/food-safety-3.png';
 import foodSafety4 from '../../assets/images/food-safety-4.png';
-import '../../components/solutions/Solutions.css';
-import './FoodSafety.css';
 
 const FoodSafety = () => {
     useEffect(() => {
@@ -32,21 +31,14 @@ const FoodSafety = () => {
     return (
         <div className="food-safety">
             {/* Custom Hero Section with Diagram */}
-            <div className="sol-section-light">
-                <div className="container">
-                    <div className="sol-hero">
-                        <h1 className="sol-hero-title">
-                            Turn Food Safety Crises into Minutes, Not Weeks
-                        </h1>
-                        <p className="sol-hero-subtitle">
-                            $2.6M average recall cost. 3-4 weeks to identify scope. 60% product loss from delayed response. Manual batch hunting across Excel sheets, emails, paper records fails regulators and consumers.
-                        </p>
-                    </div>
-                    <div className="fs-hero-diagram-container">
-                        <img src={foodSafetyHero} alt="From Incident to Isolation - 8 Minutes" className="fs-hero-image" />
-                    </div>
+            <SolutionHero
+                title="Turn Food Safety Crises into Minutes, Not Weeks"
+                subtitle="$2.6M average recall cost. 3-4 weeks to identify scope. 60% product loss from delayed response. Manual batch hunting across Excel sheets, emails, paper records fails regulators and consumers."
+            >
+                <div className="fs-hero-diagram-container">
+                    <img src={foodSafetyHero} alt="From Incident to Isolation - 8 Minutes" className="fs-hero-image" />
                 </div>
-            </div>
+            </SolutionHero>
 
             <SolutionFeatures
                 image={foodSafetyFeatures}

@@ -6,6 +6,7 @@ import platformBlockchain from '../assets/images/platform-blockchain.png';
 import platformCompliance from '../assets/images/trace-compilance-engine.png';
 import platformSecurity from '../assets/images/platform-security.png';
 import securityCheck from '../assets/images/security-check-stroke.png';
+import FeatureSplitSection from '../components/common/FeatureSplitSection';
 import FAQ from '../components/home/FAQ';
 import './Trace.css';
 
@@ -35,6 +36,20 @@ const PlatformOverview = () => {
         return null;
     };
 
+    const FeatureList = ({ items }) => (
+        <div>
+            {items.map((item, index) => (
+                <div key={index} className="po-check-item">
+                    <img src={securityCheck} alt="Check" className="po-check-icon" />
+                    <div>
+                        <div className="po-check-title">{item.title}</div>
+                        <div className="po-check-text">{item.text}</div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
+
     return (
         <div className="platform-overview">
             {/* Hero Section */}
@@ -57,104 +72,69 @@ const PlatformOverview = () => {
             </div>
 
             {/* Complete End-to-End Visibility */}
-            <div className="section po-section">
-                <div className="container">
-                    <div className="po-feature-container">
-                        <div className="po-feature-content">
-                            <h2 className="po-subheading">Complete End-to-End Visibility</h2>
-                            <p className="po-text">Gain real-time visibility across every stage of the food supply chain—from source to shelf. Track batches, movements, and events seamlessly to eliminate blind spots and data silos.</p>
-
-                            <div>
-                                {[
-                                    { title: "Real-Time CTE Tracking", text: "Every Critical Tracking Event from farm receipt to consumer scan" },
-                                    { title: "Multi-Stakeholder Portals", text: "Suppliers, manufacturers, retailers, regulators, consumers" },
-                                    { title: "Single Source of Truth", text: "Eliminate Excel chaos and conflicting records" },
-                                    { title: "Instant Recall Scope", text: "See affected customers, locations, inventory in seconds" }
-                                ].map((item, index) => (
-                                    <div key={index} className="po-check-item">
-                                        <img src={securityCheck} alt="Check" className="po-check-icon" />
-                                        <div>
-                                            <div className="po-check-title">{item.title}</div>
-                                            <div className="po-check-text">{item.text}</div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="po-feature-image-container" style={{
-                            backgroundImage: `url(${platformVisibilityBg})`
-                        }}>
-                            <img src={platformVisibility} alt="End-to-End Visibility Process" className="po-feature-image" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <FeatureSplitSection
+                heading="Complete End-to-End Visibility"
+                text="Gain real-time visibility across every stage of the food supply chain—from source to shelf. Track batches, movements, and events seamlessly to eliminate blind spots and data silos."
+                image={platformVisibility}
+                imageAlt="End-to-End Visibility Process"
+                imageBg={platformVisibilityBg}
+                sectionClass="po-section"
+                contentClass="po-feature-content"
+                imageContainerClass="po-feature-image-container"
+                imageClass="po-feature-image"
+                headingClass="po-subheading"
+                textClass="po-text"
+            >
+                <FeatureList items={[
+                    { title: "Real-Time CTE Tracking", text: "Every Critical Tracking Event from farm receipt to consumer scan" },
+                    { title: "Multi-Stakeholder Portals", text: "Suppliers, manufacturers, retailers, regulators, consumers" },
+                    { title: "Single Source of Truth", text: "Eliminate Excel chaos and conflicting records" },
+                    { title: "Instant Recall Scope", text: "See affected customers, locations, inventory in seconds" }
+                ]} />
+            </FeatureSplitSection>
 
             {/* Automated Compliance Engine */}
-            <div className="section po-section">
-                <div className="container">
-                    <div className="po-feature-container">
-                        <div className="po-feature-content">
-                            <h2 className="po-subheading">Automated Compliance Engine</h2>
-                            <p className="po-text">Automatically validate data against global food safety and regulatory standards. Reduce manual checks, eliminate errors, and stay audit-ready at every step of the supply chain</p>
-
-                            <div>
-                                {[
-                                    { title: "Pre-Built Frameworks", text: "FSMA 204, ISO 22005, GS1, EUDR ready" },
-                                    { title: "One-Click Audit Reports", text: "Inspection-ready documentation instantly" },
-                                    { title: "Smart Compliance Rules", text: "Prevents non-compliant data entry" },
-                                    { title: "Regulatory Alerts", text: "Deadlines, requirement changes monitored automatically" }
-                                ].map((item, index) => (
-                                    <div key={index} className="po-check-item">
-                                        <img src={securityCheck} alt="Check" className="po-check-icon" />
-                                        <div>
-                                            <div className="po-check-title">{item.title}</div>
-                                            <div className="po-check-text">{item.text}</div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="po-feature-image-container" style={{
-                            backgroundImage: `url(${platformVisibilityBg})`
-                        }}>
-                            <img src={platformCompliance} alt="Compliance Dashboard" className="po-feature-image" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <FeatureSplitSection
+                heading="Automated Compliance Engine"
+                text="Automatically validate data against global food safety and regulatory standards. Reduce manual checks, eliminate errors, and stay audit-ready at every step of the supply chain"
+                image={platformCompliance}
+                imageAlt="Compliance Dashboard"
+                imageBg={platformVisibilityBg}
+                sectionClass="po-section"
+                contentClass="po-feature-content"
+                imageContainerClass="po-feature-image-container"
+                imageClass="po-feature-image"
+                headingClass="po-subheading"
+                textClass="po-text"
+            >
+                <FeatureList items={[
+                    { title: "Pre-Built Frameworks", text: "FSMA 204, ISO 22005, GS1, EUDR ready" },
+                    { title: "One-Click Audit Reports", text: "Inspection-ready documentation instantly" },
+                    { title: "Smart Compliance Rules", text: "Prevents non-compliant data entry" },
+                    { title: "Regulatory Alerts", text: "Deadlines, requirement changes monitored automatically" }
+                ]} />
+            </FeatureSplitSection>
 
             {/* Enterprise Security */}
-            <div className="section">
-                <div className="container">
-                    <div className="po-feature-container">
-                        <div className="po-feature-content">
-                            <h2 className="po-subheading">Enterprise Security</h2>
-                            <p className="po-text">Automatically validate data against global food safety and regulatory standards. Reduce manual checks, eliminate errors, and stay audit-ready at every step of the supply chain</p>
-
-                            <div>
-                                {[
-                                    { title: "Hyperledger Fabric Blockchain", text: "Cryptographic immutability" },
-                                    { title: "SOC 2 Type II | ISO 27001", text: "Enterprise compliance" },
-                                    { title: "Role-Based Access", text: "Granular permissions per stakeholder" },
-                                    { title: "AWS Enterprise Encryption", text: "Military-grade data protection" }
-                                ].map((item, index) => (
-                                    <div key={index} className="po-check-item">
-                                        <img src={securityCheck} alt="Check" className="po-check-icon" />
-                                        <div>
-                                            <div className="po-check-title">{item.title}</div>
-                                            <div className="po-check-text">{item.text}</div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="po-feature-image-container">
-                            <img src={platformSecurity} alt="Enterprise Security Shield" className="po-feature-image" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <FeatureSplitSection
+                heading="Enterprise Security"
+                text="Automatically validate data against global food safety and regulatory standards. Reduce manual checks, eliminate errors, and stay audit-ready at every step of the supply chain"
+                image={platformSecurity}
+                imageAlt="Enterprise Security Shield"
+                sectionClass="section"
+                contentClass="po-feature-content"
+                imageContainerClass="po-feature-image-container"
+                imageClass="po-feature-image"
+                headingClass="po-subheading"
+                textClass="po-text"
+            >
+                <FeatureList items={[
+                    { title: "Hyperledger Fabric Blockchain", text: "Cryptographic immutability" },
+                    { title: "SOC 2 Type II | ISO 27001", text: "Enterprise compliance" },
+                    { title: "Role-Based Access", text: "Granular permissions per stakeholder" },
+                    { title: "AWS Enterprise Encryption", text: "Military-grade data protection" }
+                ]} />
+            </FeatureSplitSection>
 
             {/* Blockchain ensures Food Safety (Now Last) */}
             <div className="section">

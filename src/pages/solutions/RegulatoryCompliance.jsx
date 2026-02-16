@@ -7,8 +7,9 @@ import logoEUDR from '../../assets/images/logo_eu_dr.png';
 import logoGS1 from '../../assets/images/logo_gs1.png';
 import securityCheck from '../../assets/images/security-check-stroke.png';
 import SolutionHero from '../../components/solutions/SolutionHero';
+import SolutionStandards from '../../components/solutions/SolutionStandards';
+import AssessmentBanner from '../../components/solutions/AssessmentBanner';
 import FAQ from '../../components/home/FAQ';
-import './RegulatoryCompliance.css';
 
 const RegulatoryCompliance = () => {
     useEffect(() => {
@@ -47,7 +48,7 @@ const RegulatoryCompliance = () => {
             />
 
             {/* Compliance Engine & Standards Section */}
-            <div className="section rc-section">
+            <div className="section sol-section">
                 <div className="container">
                     <div style={{ display: 'flex', gap: '80px', flexWrap: 'wrap' }}>
 
@@ -63,63 +64,24 @@ const RegulatoryCompliance = () => {
                         </div>
 
                         {/* Right: Standards Grid */}
-                        <div className="rc-standards-container">
-                            <h2 className="rc-subheading" style={{ marginBottom: '16px' }}>TRAZEIT Compliance Engine</h2>
-                            <p className="rc-text" style={{ marginBottom: '60px' }}>
-                                Powerful key features designed to deliver real-time visibility, regulatory compliance, and complete product integrity across the food supply chain—from farm origin to consumer scan.
-                            </p>
-
-                            <div className="rc-standards-grid">
-                                {standards.map((std, index) => (
-                                    <div key={index} className="rc-standard-card">
-                                        <div className="rc-standard-logo-container">
-                                            <img src={std.logo} alt={std.title} className="rc-standard-logo" />
-                                        </div>
-                                        <h4 className="rc-standard-title">{std.title}</h4>
-                                        <div>
-                                            {std.checks.map((check, idx) => (
-                                                <div key={idx} className="rc-check-item">
-                                                    <img src={securityCheck} alt="check" className="rc-check-icon" />
-                                                    <span className="rc-check-text">{check}</span>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+                        <SolutionStandards
+                            title="TRAZEIT Compliance Engine"
+                            description="Powerful key features designed to deliver real-time visibility, regulatory compliance, and complete product integrity across the food supply chain—from farm origin to consumer scan."
+                            standards={standards}
+                            checkIcon={securityCheck}
+                        />
                     </div>
                 </div>
             </div>
 
             {/* Assessment Banner Section */}
-            <div className="section rc-section">
-                <div className="container">
-                    <div className="rc-assessment-banner">
-                        {/* Left Content */}
-                        <div className="rc-assessment-content">
-                            <h2 className="rc-assessment-heading">
-                                Assess your gaps in 2 minutes
-                            </h2>
-                            <p className="rc-assessment-text">
-                                Quickly assess your compliance readiness in just 2 minutes with our free interactive checklist. Identify gaps instantly and download a personalized roadmap to meet regulatory and traceability requirements with confidence.
-                            </p>
-                            <button className="rc-assessment-button">
-                                Download personalized roadmap →
-                            </button>
-                        </div>
-
-                        {/* Right Image */}
-                        <div className="rc-assessment-image-container">
-                            <img
-                                src={complianceAssessment}
-                                alt="Assessment Checklist"
-                                className="rc-assessment-image"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <AssessmentBanner
+                heading="Assess your gaps in 2 minutes"
+                text="Quickly assess your compliance readiness in just 2 minutes with our free interactive checklist. Identify gaps instantly and download a personalized roadmap to meet regulatory and traceability requirements with confidence."
+                buttonText="Download personalized roadmap"
+                image={complianceAssessment}
+                imageAlt="Assessment Checklist"
+            />
 
             {/* FAQ Section */}
             <FAQ items={[

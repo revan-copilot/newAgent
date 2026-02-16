@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import SolutionHero from '../../components/solutions/SolutionHero';
+import ProblemAlert from '../../components/solutions/ProblemAlert';
 import SolutionFeatures from '../../components/solutions/SolutionFeatures';
 import SolutionResults from '../../components/solutions/SolutionResults';
 import FAQ from '../../components/home/FAQ';
@@ -8,8 +10,6 @@ import farmImpact3 from '../../assets/images/farm-impact-3.png';
 import farmImpact4 from '../../assets/images/farm-impact-4.png';
 import farmProcessFlow from '../../assets/images/farm-process-flow.png';
 import farmFeatures from '../../assets/images/farm-features.png';
-import '../../components/solutions/Solutions.css';
-import './FarmToFork.css';
 
 const FarmToFork = () => {
     useEffect(() => {
@@ -45,29 +45,25 @@ const FarmToFork = () => {
     return (
         <div className="farm-to-fork">
             {/* Custom Hero with Problem Alert & Process Flow */}
-            <div className="sol-section-white">
-                <div className="container">
-                    <div className="sol-hero">
-                        <h1 className="sol-hero-title">Track Every Step: From Farm to Consumer Table</h1>
+            <SolutionHero
+                title="Track Every Step: From Farm to Consumer Table"
+                sectionClass="sol-section-white"
+            >
+                {/* Problem Alert Box */}
+                <ProblemAlert
+                    label="⚠ Problem"
+                    message="Food journeys through 10+ organizations. One contamination affects products across facilities and countries. Traditional systems take weeks to identify scope, costing millions in recalls and lost trust"
+                />
 
-                        {/* Problem Alert Box */}
-                        <div className="ftf-problem-alert">
-                            <p className="ftf-problem-text">
-                                <span className="ftf-problem-label">⚠ Problem:</span> Food journeys through 10+ organizations. One contamination affects products across facilities and countries. Traditional systems take weeks to identify scope, costing millions in recalls and lost trust
-                            </p>
-                        </div>
+                <h3 className="ftf-subheading ftf-subheading-small">Automated Critical Tracking Events at every step</h3>
+                <p className="sol-hero-subtitle" style={{ marginBottom: '60px' }}>
+                    Automatically capture, validate, and record Critical Tracking Events across every supply chain stage in real time.
+                </p>
 
-                        <h3 className="ftf-subheading ftf-subheading-small">Automated Critical Tracking Events at every step</h3>
-                        <p className="sol-hero-subtitle" style={{ marginBottom: '60px' }}>
-                            Automatically capture, validate, and record Critical Tracking Events across every supply chain stage in real time.
-                        </p>
-
-                        <div className="ftf-process-flow-container">
-                            <img src={farmProcessFlow} alt="Farm to Fork Process Flow" className="ftf-process-image" />
-                        </div>
-                    </div>
+                <div className="ftf-process-flow-container">
+                    <img src={farmProcessFlow} alt="Farm to Fork Process Flow" className="ftf-process-image" />
                 </div>
-            </div>
+            </SolutionHero>
 
             <SolutionFeatures
                 image={farmFeatures}

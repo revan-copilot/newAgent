@@ -10,10 +10,12 @@ import resultIcon1 from '../../assets/images/retail-1.png';
 import resultIcon2 from '../../assets/images/retail-2.png';
 import resultIcon3 from '../../assets/images/retail-3.png';
 import resultIcon4 from '../../assets/images/retail-4.png';
+import IndustryHero from '../../components/industries/IndustryHero';
+import IndustryFeatureGrid from '../../components/industries/IndustryFeatureGrid';
 import VideoSection from '../../components/industries/VideoSection';
 import SolutionResults from '../../components/solutions/SolutionResults';
-import FAQ from '../../components/home/FAQ'; // Importing FAQ from correct location
-import './ForRetailers.css';
+import FAQ from '../../components/home/FAQ';
+import '../../components/industries/Industries.css';
 
 const ForRetailers = () => {
     useEffect(() => {
@@ -23,107 +25,82 @@ const ForRetailers = () => {
     return (
         <div className="for-retailers">
             {/* Hero Section */}
-            {/* Hero Section */}
-            <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-[120px] sm:pt-[150px] sm:pb-[100px]">
-                <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat w-full h-full" style={{ backgroundImage: `url(${retailHeroBg})` }}></div>
-                <div className="absolute inset-0 bg-black/60 z-[1]"></div>
-                <div className="container relative z-[2] text-center">
-                    <div className="flex flex-col items-center">
-                        <h1 className="text-white font-[Lateef] font-medium mb-7 w-full -tracking-[0.01em] text-[2rem] leading-[1.2] sm:text-[2.75rem] sm:leading-[1.1] lg:text-[106px] lg:leading-[91px]">
-                            Assure Your Customers: Complete Supply Chain Transparency
-                        </h1>
-                        <p className="text-white font-[Inter] font-normal mb-12 text-base leading-6 sm:text-[20px] sm:leading-[30px] lg:text-[23px] lg:leading-[34px] w-full mx-auto">
-                            Supplier verification taking weeks. Private label recalls across 200+ stores. Consumers demanding origin proof via QR. Regulatory complexity
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-5 flex-wrap justify-center items-center w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-6 py-3 text-base font-medium text-white bg-[#1E4D8C] rounded-sm transition-all duration-200 hover:bg-[#163A6B] hover:-translate-y-[1px] hover:shadow-lg">Request a Demo</button>
-                            <button className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white bg-transparent border border-white rounded-sm transition-all duration-200 hover:bg-white hover:text-[#0F172A]">
-                                <img src={arrowBtn} alt="Play" className="w-[18px] h-[18px] transition-all duration-200 group-hover:brightness-0" />
-                                Watch 2-Min Demo Video
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <IndustryHero
+                title="Assure Your Customers: Complete Supply Chain Transparency"
+                subtitle="Supplier verification taking weeks. Private label recalls across 200+ stores. Consumers demanding origin proof via QR. Regulatory complexity"
+                bgImage={retailHeroBg}
+                arrowIcon={arrowBtn}
+            />
 
             {/* Process Flow Image (Store-to-Farm Transparency) */}
-            <div className="section fr-section">
+            <div className="section ind-section">
                 <div className="container">
-                    <h2 className="fr-heading-center">Store-to-Farm Transparency</h2>
-                    <p className="fr-text text-center" style={{ margin: '0 auto 40px', textAlign: 'center' }}>
+                    <h2 className="ind-heading-center">Store-to-Farm Transparency</h2>
+                    <p className="ind-text text-center" style={{ margin: '0 auto 40px', textAlign: 'center' }}>
                         Track every step from store shelves back to the farm. Ensure complete visibility across the supply chain, building trust with consumers and stakeholders.
                     </p>
-                    <div className="fr-process-flow-container">
-                        <img src={retailProcessFlow} alt="Store to Farm Transparency Process Flow" className="fr-process-image" />
+                    <div className="ind-process-container">
+                        <img src={retailProcessFlow} alt="Store to Farm Transparency Process Flow" className="ind-process-image" />
                     </div>
                 </div>
             </div>
 
             {/* Core Platform Features (Premium Export Intelligence) */}
-            <div className="section fr-section fr-section-light">
-                <div className="container">
-                    <div className="fr-features-grid">
-                        <div className="fr-features-left">
-                            <h2 className="fr-heading">Premium Export Intelligence</h2>
-                            <p className="fr-text">
-                                Advanced automation that keeps you compliant, globally ready, and protected—without manual effort or delays
-                            </p>
-                            <div className="fr-feature-items">
-                                <div className="fr-feature-item">
-                                    <div className="fr-check-icon">
-                                        <img src={securityCheck} alt="Check" />
-                                    </div>
-                                    <div>
-                                        <h4>Supplier Dashboard</h4>
-                                        <p>Real-time compliance/quality scores</p>
-                                    </div>
-                                </div>
-                                <div className="fr-feature-item">
-                                    <div className="fr-check-icon">
-                                        <img src={securityCheck} alt="Check" />
-                                    </div>
-                                    <div>
-                                        <h4>Private Label Control</h4>
-                                        <p>Enforce manufacturer standards</p>
-                                    </div>
-                                </div>
-                                <div className="fr-feature-item">
-                                    <div className="fr-check-icon">
-                                        <img src={securityCheck} alt="Check" />
-                                    </div>
-                                    <div>
-                                        <h4>Consumer QR Generation</h4>
-                                        <p>GS1 Digital Link ready</p>
-                                    </div>
-                                </div>
-                                <div className="fr-feature-item">
-                                    <div className="fr-check-icon">
-                                        <img src={securityCheck} alt="Check" />
-                                    </div>
-                                    <div>
-                                        <h4>Store-Level Tracking</h4>
-                                        <p>Shelf placement to recall execution</p>
-                                    </div>
-                                </div>
-                                <div className="fr-feature-item">
-                                    <div className="fr-check-icon">
-                                        <img src={securityCheck} alt="Check" />
-                                    </div>
-                                    <div>
-                                        <h4>Rapid Recall</h4>
-                                        <p>Affected stores identified in minutes</p>
-                                    </div>
-                                </div>
-                            </div>
+            <IndustryFeatureGrid
+                heading="Premium Export Intelligence"
+                text="Advanced automation that keeps you compliant, globally ready, and protected—without manual effort or delays"
+                image={retailPremiumComponents}
+                imageAlt="Retail Intelligence Dashboard"
+                sectionClass="ind-section-light"
+            >
+                <div className="ind-feature-items">
+                    <div className="ind-feature-item">
+                        <div className="ind-check-icon-container">
+                            <img src={securityCheck} alt="Check" className="ind-check-icon" />
                         </div>
-                        <div className="fr-features-right">
-                            <div className="fr-app-image-container">
-                                <img src={retailPremiumComponents} alt="Retail Intelligence Dashboard" className="fr-app-image" />
-                            </div>
+                        <div>
+                            <h4>Supplier Dashboard</h4>
+                            <p>Real-time compliance/quality scores</p>
+                        </div>
+                    </div>
+                    <div className="ind-feature-item">
+                        <div className="ind-check-icon-container">
+                            <img src={securityCheck} alt="Check" className="ind-check-icon" />
+                        </div>
+                        <div>
+                            <h4>Private Label Control</h4>
+                            <p>Enforce manufacturer standards</p>
+                        </div>
+                    </div>
+                    <div className="ind-feature-item">
+                        <div className="ind-check-icon-container">
+                            <img src={securityCheck} alt="Check" className="ind-check-icon" />
+                        </div>
+                        <div>
+                            <h4>Consumer QR Generation</h4>
+                            <p>GS1 Digital Link ready</p>
+                        </div>
+                    </div>
+                    <div className="ind-feature-item">
+                        <div className="ind-check-icon-container">
+                            <img src={securityCheck} alt="Check" className="ind-check-icon" />
+                        </div>
+                        <div>
+                            <h4>Store-Level Tracking</h4>
+                            <p>Shelf placement to recall execution</p>
+                        </div>
+                    </div>
+                    <div className="ind-feature-item">
+                        <div className="ind-check-icon-container">
+                            <img src={securityCheck} alt="Check" className="ind-check-icon" />
+                        </div>
+                        <div>
+                            <h4>Rapid Recall</h4>
+                            <p>Affected stores identified in minutes</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </IndustryFeatureGrid>
 
             {/* Retailer in Action Section (Video) */}
             <VideoSection
