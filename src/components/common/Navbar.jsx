@@ -211,6 +211,10 @@ function Navbar() {
                         `}>
                             <Link to="/compliance-hub" className={dropdownItemClass}>Compliance Hub</Link>
                             <Link to="/compliance-hub/iso-22005" className={dropdownItemClass}>ISO 22005</Link>
+                            <Link to="/compliance-hub/fsma-204" className={dropdownItemClass}>FSMA 204</Link>
+                            <Link to="/compliance-hub/gs1-standards" className={dropdownItemClass}>GS1 Standards</Link>
+                            <Link to="/compliance-hub/eudr" className={dropdownItemClass}>EUDR Compliance</Link>
+                            <Link to="/compliance-hub/checklist" className={dropdownItemClass}>Compliance Checklist</Link>
                         </div>
                     </div>
 

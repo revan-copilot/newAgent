@@ -39,57 +39,52 @@ const automationCards = [
 
 function ComplianceAutomation() {
     return (
-        <section className="section section-light">
-            <div className="container">
+        <section className="py-24 bg-white">
+            <div className="container px-4 mx-auto max-w-7xl">
                 {/* Header */}
-                <div className="text-center max-w-3xl mx-auto mb-14">
-                    <h2 className="text-[1.75rem] sm:text-[2rem] lg:text-[2.5rem] font-bold text-text-dark mb-4">
+                <div className="text-center mx-auto mb-20 max-w-3xl">
+                    <h2 className="text-[40px] font-bold text-[#0E1624] mb-4 tracking-tight">
                         Global Compliance Automation Suite
                     </h2>
-                    <p className="text-text-gray text-base sm:text-lg leading-relaxed">
+                    <p className="text-[#475569] text-xl leading-relaxed">
                         Everything you need to meet global regulatory requirements—built into one intelligent, scalable compliance platform
                     </p>
                 </div>
 
-                {/* Cards — Top row: 3, Bottom row: 2 centered */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {automationCards.slice(0, 3).map((card, index) => (
-                        <AutomationCard key={index} card={card} />
-                    ))}
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 max-w-[calc(66.666%+12px)] mx-auto">
-                    {automationCards.slice(3).map((card, index) => (
-                        <AutomationCard key={index + 3} card={card} />
+                {/* Cards Grid */}
+                <div className="flex flex-wrap justify-center gap-8">
+                    {automationCards.map((card, index) => (
+                        <div
+                            key={index}
+                            className="w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] p-10 rounded-[32px] bg-[#F8FAFC] border border-[#E2E8F0]/30 shadow-sm transition-all hover:bg-white hover:border-[#143A79]/10 flex flex-col items-start"
+                        >
+                            <div className="w-16 h-16 mb-8 flex items-center justify-center p-3 bg-white rounded-2xl shadow-sm border border-[#E2E8F0]/50">
+                                <img
+                                    src={card.icon}
+                                    alt={card.title}
+                                    className="w-full h-full object-contain"
+                                />
+                            </div>
+                            <h3 className="text-[22px] font-bold text-[#0E1624] mb-4 tracking-tight">
+                                {card.title}
+                            </h3>
+                            <p className="text-[#475569] text-base leading-relaxed mb-10 font-normal flex-1">
+                                {card.description}
+                            </p>
+                            <a
+                                href="#"
+                                className="inline-flex items-center gap-3 text-[18px] font-bold text-[#143A79] px-6 py-3 border border-[#143A79] rounded-xl hover:bg-[#143A79] hover:text-white transition-all duration-300"
+                            >
+                                Learn More
+                                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
                     ))}
                 </div>
             </div>
         </section>
-    );
-}
-
-function AutomationCard({ card }) {
-    return (
-        <div className="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-md transition-shadow duration-300 flex flex-col">
-            <div className="w-14 h-14 mb-5">
-                <img
-                    src={card.icon}
-                    alt={card.title}
-                    className="w-full h-full object-contain"
-                />
-            </div>
-            <h3 className="text-lg font-bold text-text-dark mb-3">
-                {card.title}
-            </h3>
-            <p className="text-text-gray text-sm leading-relaxed mb-6 flex-1">
-                {card.description}
-            </p>
-            <a
-                href="#"
-                className="inline-flex items-center gap-2 text-sm font-medium text-primary-blue border border-primary-blue rounded-[8px] px-4 py-2 w-fit hover:bg-blue-50 transition-colors duration-200"
-            >
-                Learn More <span>→</span>
-            </a>
-        </div>
     );
 }
 

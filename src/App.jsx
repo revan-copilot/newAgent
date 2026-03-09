@@ -12,8 +12,12 @@ import ForManufacturers from './pages/industries/ForManufacturers';
 import ForExporters from './pages/industries/ForExporters';
 import ForRetailers from './pages/industries/ForRetailers';
 import SupplyChain from './pages/solutions/SupplyChain';
-import ComplianceHub from './pages/ComplianceHub';
-import ISO22005 from './pages/ISO22005';
+import ComplianceHub from './pages/compliance/ComplianceHub';
+import ISO22005 from './pages/compliance/ISO22005';
+import FSMA204 from './pages/compliance/FSMA204';
+import GS1Page from './pages/compliance/GS1';
+import EUDR from './pages/compliance/EUDR';
+import ComplianceChecklist from './pages/compliance/ComplianceChecklist';
 import './App.css';
 
 function App() {
@@ -35,7 +39,10 @@ function App() {
                         <Route path="/solutions/supply-chain" element={<SupplyChain />} />
                         <Route path="/compliance-hub" element={<ComplianceHub />} />
                         <Route path="/compliance-hub/iso-22005" element={<ISO22005 />} />
-                        {/* Future pages can be added here */}
+                        <Route path="/compliance-hub/fsma-204" element={<FSMA204 />} />
+                        <Route path="/compliance-hub/gs1-standards" element={<GS1Page />} />
+                        <Route path="/compliance-hub/eudr" element={<EUDR />} />
+                        <Route path="/compliance-hub/checklist" element={<ComplianceChecklist />} />
                         <Route path="/about" element={<AboutUs />} />
                         {/* <Route path="/contact" element={<Contact />} /> */}
                     </Routes>

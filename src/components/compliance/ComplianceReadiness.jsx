@@ -1,3 +1,4 @@
+import React from 'react';
 import fsmaLogo from '../../assets/images/fsma-logo.png';
 import isoLogo from '../../assets/images/logo-ISO.png';
 import eudrLogo from '../../assets/images/eudr-logo.png';
@@ -28,36 +29,36 @@ const readinessCards = [
 
 function ComplianceReadiness() {
     return (
-        <section className="py-20 bg-white">
-            <div className="container">
+        <section className="py-24 bg-white">
+            <div className="container px-4 mx-auto max-w-7xl">
                 {/* Header */}
-                <div className="text-center max-w-3xl mx-auto mb-14">
-                    <h2 className="text-[1.75rem] sm:text-[2rem] lg:text-[2.5rem] font-bold text-text-dark mb-4">
+                <div className="text-center mx-auto mb-20 max-w-2xl">
+                    <h2 className="text-[40px] font-bold text-[#0E1624] mb-4">
                         Global Compliance Readiness Dashboard
                     </h2>
-                    <p className="text-text-gray text-base sm:text-lg leading-relaxed">
-                        Track FSMA 204 (Dec 2026), ISO 22005 audit readiness, live EUDR enforcement, and GS1 mandates in one real-time view—so deadlines never become disruptions
+                    <p className="text-[#475569] text-xl leading-relaxed">
+                        Track FSMA 204 (Dec 2026), ISO 22005 audit readiness, live EUDR enforcement, and GS1 mandates in one real-time view.
                     </p>
                 </div>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {readinessCards.map((card, index) => (
                         <div
                             key={index}
-                            className="rounded-2xl p-8 flex flex-col items-center text-center justify-between h-full" style={{ backgroundColor: '#EEF2F7' }}
+                            className="bg-[#F8FAFC] rounded-[32px] p-10 flex flex-col items-center text-center justify-between h-full border border-[#E2E8F0]/30 shadow-sm transition-all hover:bg-white hover:border-[#143A79]/10"
                         >
-                            <h3 className="mb-5" style={{ fontSize: '20px', fontWeight: 600, color: '#0E1624' }}>
+                            <h3 className="mb-8 text-[22px] font-bold text-[#0E1624] tracking-tight">
                                 {card.title}
                             </h3>
-                            <div className="w-20 h-20 lg:w-[120px] lg:h-[120px] flex items-center justify-center mb-5">
+                            <div className="w-[140px] h-[140px] flex items-center justify-center mb-10">
                                 <img
                                     src={card.logo}
                                     alt={card.title}
                                     className="max-w-full max-h-full object-contain"
                                 />
                             </div>
-                            <p style={{ fontSize: '16px', fontWeight: 400, color: '#0E1624' }}>
+                            <p className="text-[#0E1624] text-[18px] font-semibold leading-tight">
                                 {card.description}
                             </p>
                         </div>
